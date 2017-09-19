@@ -1,0 +1,51 @@
+{
+  "name": "format-date",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "jest": "^21.1.0",
+    "moment-timezone": "^0.5.13"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "regenerator-runtime": "^0.11.0",
+    "sinon": "^3.3.0",
+    "webpack": "^3.6.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "jest"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/test/**/?(*.)(spec|test).js?(x)"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    }
+  },
+  "babel": {
+    "presets": ["env"]
+  },
+  "description": "Date formatter utilities",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/format-date.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helpscout/format-date/issues"
+  },
+  "homepage": "https://github.com/helpscout/format-date#readme"
+}
