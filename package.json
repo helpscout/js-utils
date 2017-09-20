@@ -2,7 +2,7 @@
   "name": "@helpscout/format-date",
   "version": "0.0.7",
   "description": "Date formatter utilities",
-  "main": "dist/bundle.js",
+  "main": "src/index.js",
   "author": "Brett Jones <brettjonesdev@gmail.com>",
   "private": false,
   "dependencies": {},
