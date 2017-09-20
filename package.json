@@ -1,12 +1,12 @@
 {
   "name": "@helpscout/format-date",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Date formatter utilities",
   "main": "dist/bundle.js",
   "author": "Brett Jones <brettjonesdev@gmail.com>",
   "private": false,
   "dependencies": {},
-  "peerDependencies": {
+  "externals": {
     "moment-timezone": "^0.5.13"
   },
   "devDependencies": {
