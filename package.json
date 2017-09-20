@@ -1,12 +1,16 @@
 {
-  "name": "format-date",
+  "name": "@helpscout/format-date",
   "version": "0.0.1",
-  "private": true,
-  "dependencies": {
-    "jest": "^21.1.0",
+  "description": "Date formatter utilities",
+  "main": "dist/bundle.js",
+  "author": "Brett Jones <brettjonesdev@gmail.com>",
+  "private": false,
+  "dependencies": {},
+  "peerDependencies": {
     "moment-timezone": "^0.5.13"
   },
   "devDependencies": {
+    "jest": "^21.1.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^21.0.2",
@@ -35,15 +39,12 @@
   "babel": {
     "presets": ["env"]
   },
-  "description": "Date formatter utilities",
-  "main": "webpack.config.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/helpscout/format-date.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "GPL",
   "bugs": {
     "url": "https://github.com/helpscout/format-date/issues"
   },
