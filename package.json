@@ -6,9 +6,6 @@
   "author": "Brett Jones <brettjonesdev@gmail.com>",
   "private": false,
   "dependencies": {},
-  "externals": {
-    "moment-timezone": "^0.5.13"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
