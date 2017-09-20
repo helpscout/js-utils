@@ -5,6 +5,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    library: '@helpscout/blue',
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [
