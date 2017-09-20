@@ -1,6 +1,6 @@
 {
   "name": "@helpscout/format-date",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Date formatter utilities",
   "main": "dist/bundle.js",
   "author": "Brett Jones <brettjonesdev@gmail.com>",
@@ -10,7 +10,6 @@
     "moment-timezone": "^0.5.13"
   },
   "devDependencies": {
-    "jest": "^21.1.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^21.0.2",
@@ -18,11 +17,11 @@
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "jest": "^21.1.0",
+    "moment-timezone": "^0.5.13",
     "regenerator-runtime": "^0.11.0",
     "sinon": "^3.3.0",
-    "webpack": "^3.6.0",
-    "moment-timezone": "^0.5.13"
-
+    "webpack": "^3.6.0"
   },
   "scripts": {
     "build": "webpack",
@@ -39,7 +38,9 @@
     }
   },
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "repository": {
     "type": "git",
