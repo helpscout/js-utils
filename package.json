@@ -1,6 +1,6 @@
 {
   "name": "@helpscout/format-date",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Date formatter utilities",
   "main": "dist/bundle.js",
   "author": "Brett Jones <brettjonesdev@gmail.com>",
