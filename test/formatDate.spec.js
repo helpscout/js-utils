@@ -1,4 +1,4 @@
-import formatDate from '../src/formatters/formatDate'
+import formatDate from '../src/formatDate'
 import moment from 'moment-timezone'
 import sinon from 'sinon'
 

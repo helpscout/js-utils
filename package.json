@@ -1,5 +1,5 @@
 {
-  "name": "@helpscout/format-date",
+  "name": "@helpscout/js-utils",
   "version": "0.0.11",
   "description": "Date formatter utilities",
   "main": "dist/bundle.js",
@@ -41,11 +41,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/format-date.git"
+    "url": "git+https://github.com/helpscout/js-utils.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/helpscout/format-date/issues"
+    "url": "https://github.com/helpscout/js-utils/issues"
   },
-  "homepage": "https://github.com/helpscout/format-date#readme"
+  "homepage": "https://github.com/helpscout/js-utils#readme"
 }
