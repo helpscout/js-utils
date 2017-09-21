@@ -1,3 +1,2 @@
-import formatDate from './formatDate'
+export { default as Animate } from './formatDate'
 
-export { formatDate }
