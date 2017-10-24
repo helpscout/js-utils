@@ -1,9 +1,9 @@
 import moment from 'moment-timezone'
 
 function formatDate (date,
-                     timezone,
-                     timeFormat = 'h:mma',
                      {
+                       timezone=false,
+                       timeFormat = 'h:mma',
                        hourLabel = 'hour',
                        hoursLabel = 'hours',
                        minuteLabel = 'min',
@@ -11,8 +11,8 @@ function formatDate (date,
                        dayLabel = 'day',
                        daysLabel = 'days'
                      } = {}) {
-  const momentDate = moment.utc(date).tz(timezone)
-  const today = moment.utc(new Date()).tz(timezone)
+  const momentDate = timezone ? moment.utc(date).tz(timezone) : moment(date)
+  const today = timezone ? moment.utc(new Date()).tz(timezone) : moment(new Date())
   const isToday = moment(today).isSame(momentDate, 'day')
   const isThisYear = moment(today).isSame(momentDate, 'year')
 
