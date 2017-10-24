@@ -2,7 +2,7 @@
   "name": "@helpscout/js-utils",
   "version": "0.1.1",
   "description": "Date formatter utilities",
-  "main": "dist/bundle.js",
+  "main": "src/index.js",
   "author": "Brett Jones <brettjonesdev@gmail.com>",
   "private": false,
   "dependencies": {},
