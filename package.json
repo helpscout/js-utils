@@ -1,6 +1,6 @@
 {
   "name": "@helpscout/js-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Date formatter utilities",
   "main": "src/index.js",
   "author": "Brett Jones <brettjonesdev@gmail.com>",
