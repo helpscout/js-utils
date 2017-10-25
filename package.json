@@ -1,6 +1,6 @@
 {
   "name": "@helpscout/js-utils",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Date formatter utilities",
   "main": "dist/bundle.js",
   "author": "Brett Jones <brettjonesdev@gmail.com>",
