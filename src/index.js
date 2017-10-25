@@ -1,3 +1,1 @@
-import formatDate from './formatDate'
-
-export { formatDate }
+export { default as formatDate } from './formatDate'
