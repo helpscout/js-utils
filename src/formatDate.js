@@ -9,7 +9,8 @@ function formatDate (date,
                        minuteLabel = 'min',
                        minutesLabel = 'min',
                        dayLabel = 'day',
-                       daysLabel = 'days'
+                       daysLabel = 'days',
+                       condensed = false,
                      } = {}) {
   const momentDate = timezone ? moment.utc(date).tz(timezone) : moment(date)
   const today = timezone ? moment.utc(new Date()).tz(timezone) : moment(new Date())
@@ -33,6 +34,9 @@ function formatDate (date,
   }
   if (minutes < 60) {
     const label = minutes > 1 ? minutesLabel : minuteLabel
+    if (condensed === true) {
+      return `${minutes}${label.charAt(0)}`
+    }
     return `${minutes} ${label} ago`
   }
   if (hours < 24) {
@@ -40,10 +44,16 @@ function formatDate (date,
       return momentDate.format(timeFormat)
     }
     const label = hours > 1 ? hoursLabel : hourLabel
+    if (condensed === true) {
+      return `${hours}${label.charAt(0)}`
+    }
     return `${hours} ${label} ago`
   }
   if (hours >= 24 && days < 7) {
     const label = days > 1 ? daysLabel : dayLabel
+    if (condensed === true) {
+      return `${days}${label.charAt(0)}`
+    }
     return `${days} ${label} ago`
   }
   const dateFormat = 'MMM D, \'YY'

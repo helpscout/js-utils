@@ -91,4 +91,20 @@ describe('formatDate specs', () => {
     expect(formatDate(oneDayAgo, { timezone, timeFormat: time12Hour, dayLabel, daysLabel })).toBe(`1 ${dayLabel} ago`)
     expect(formatDate(daysAgo, { timezone, timeFormat: time12Hour, dayLabel, daysLabel })).toBe(`2 ${daysLabel} ago`)
   })
+
+  it('should respect the condensed option', () => {
+    const condensed = true;
+    const hourLabel = 'hour';
+    const hoursLabel = 'hours';
+    const minuteLabel = 'minute';
+    const minutesLabel = 'minutes';
+    const dayLabel = 'day';
+    const daysLabel = 'days';
+    expect(formatDate(yesterdayHoursAgo, { timezone, timeFormat: time12Hour, hourLabel, hoursLabel, condensed })).toBe('19h');
+    expect(formatDate(oneMinuteAgo, { timezone, timeFormat: time12Hour, minuteLabel, minutesLabel, condensed })).toBe('1m');
+    expect(formatDate(minutesAgo, { timezone, timeFormat: time12Hour, minuteLabel, minutesLabel, condensed })).toBe('15m');
+    expect(formatDate(oneDayAgo, { timezone, timeformat: time12Hour, dayLabel, daysLabel, condensed })).toBe('1d');
+    expect(formatDate(daysAgo, { timezone, timeFormat: time12Hour, dayLabel, daysLabel, condensed })).toBe('2d');
+    expect(formatDate(today, { timezone, timeFormat: time12Hour, condensed })).toBe('4:15am');
+  })
 })
