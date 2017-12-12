@@ -23,6 +23,10 @@ function formatDate (date,
   const hours = Math.floor(duration.asHours())
   const days = Math.floor(duration.asDays())
 
+  const formatOutput = (label, value) => {
+    return condensed === true ? `${value}${label.charAt(0)}` : `${value} ${label} ago`
+  }
+
   // IF the time is in the past minute, show "Just Now"
   // IF the time is in the last hour, show minutes since (i.e. 2 min. ago)
   // IF the time is from today - show the hourly time (i.e. 6:00pm, or 9:06am)
@@ -34,27 +38,18 @@ function formatDate (date,
   }
   if (minutes < 60) {
     const label = minutes > 1 ? minutesLabel : minuteLabel
-    if (condensed === true) {
-      return `${minutes}${label.charAt(0)}`
-    }
-    return `${minutes} ${label} ago`
+    return formatOutput(label, minutes)
   }
   if (hours < 24) {
     if (isToday) {
       return momentDate.format(timeFormat)
     }
     const label = hours > 1 ? hoursLabel : hourLabel
-    if (condensed === true) {
-      return `${hours}${label.charAt(0)}`
-    }
-    return `${hours} ${label} ago`
+    return formatOutput(label, hours)
   }
   if (hours >= 24 && days < 7) {
     const label = days > 1 ? daysLabel : dayLabel
-    if (condensed === true) {
-      return `${days}${label.charAt(0)}`
-    }
-    return `${days} ${label} ago`
+    return formatOutput(label, days)
   }
   const dateFormat = 'MMM D, \'YY'
   const dateFormatThisYear = 'MMM D'
