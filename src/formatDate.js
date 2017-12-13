@@ -24,7 +24,7 @@ function formatDate (date,
   const days = Math.floor(duration.asDays())
 
   const formatOutput = (label, value) => {
-    return condensed === true ? `${value}${label.charAt(0)}` : `${value} ${label} ago`
+    return condensed === true ? `${value}${label}` : `${value} ${label} ago`
   }
 
   // IF the time is in the past minute, show "Just Now"

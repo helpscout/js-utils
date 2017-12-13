@@ -94,12 +94,12 @@ describe('formatDate specs', () => {
 
   it('should respect the condensed option', () => {
     const condensed = true;
-    const hourLabel = 'hour';
-    const hoursLabel = 'hours';
-    const minuteLabel = 'minute';
-    const minutesLabel = 'minutes';
-    const dayLabel = 'day';
-    const daysLabel = 'days';
+    const hourLabel = 'h';
+    const hoursLabel = 'h';
+    const minuteLabel = 'm';
+    const minutesLabel = 'm';
+    const dayLabel = 'd';
+    const daysLabel = 'd';
     expect(formatDate(yesterdayHoursAgo, { timezone, timeFormat: time12Hour, hourLabel, hoursLabel, condensed })).toBe('19h');
     expect(formatDate(oneMinuteAgo, { timezone, timeFormat: time12Hour, minuteLabel, minutesLabel, condensed })).toBe('1m');
     expect(formatDate(minutesAgo, { timezone, timeFormat: time12Hour, minuteLabel, minutesLabel, condensed })).toBe('15m');
