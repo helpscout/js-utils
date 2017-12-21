@@ -23,6 +23,6 @@ module.exports = {
     ]
   },
   externals: {
-    'moment-timezone': 'moment-timezone'
+    'moment-timezone': 'moment'
   }
 }
