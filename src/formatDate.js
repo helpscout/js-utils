@@ -10,6 +10,7 @@ function formatDate (date,
                        minutesLabel = 'min',
                        dayLabel = 'day',
                        daysLabel = 'days',
+                       nowLabel = 'Just Now',
                        condensed = false,
                      } = {}) {
   const momentDate = timezone ? moment.utc(date).tz(timezone) : moment(date)
@@ -34,7 +35,7 @@ function formatDate (date,
   // IF the time is greater than 24 hours ago, show the days (i.e. 3 days ago)
   // IF time is greater than 6 days, then show date (i.e. Mar 14, or Dec 12 ’16 if year is NOT current year)
   if (seconds < 60) {
-    return 'Just Now'
+    return nowLabel
   }
   if (minutes < 60) {
     const label = minutes > 1 ? minutesLabel : minuteLabel

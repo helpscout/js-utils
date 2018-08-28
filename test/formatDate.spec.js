@@ -92,6 +92,11 @@ describe('formatDate specs', () => {
     expect(formatDate(daysAgo, { timezone, timeFormat: time12Hour, dayLabel, daysLabel })).toBe(`2 ${daysLabel} ago`)
   })
 
+  it('should respect the now label option', () => {
+    const nowLabel = 'NOW';
+    expect(formatDate(justNow, { timezone, nowLabel })).toBe(nowLabel)
+  })
+
   it('should respect the condensed option', () => {
     const condensed = true;
     const hourLabel = 'h';
